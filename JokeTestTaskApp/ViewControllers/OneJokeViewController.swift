@@ -19,8 +19,8 @@ class OneJokeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        doneButton.layer.cornerRadius = 15
-        popUpView.layer.cornerRadius = 15
+        doneButton.layer.cornerRadius = 10
+        popUpView.layer.cornerRadius = 10
 
         setupLabels()
         

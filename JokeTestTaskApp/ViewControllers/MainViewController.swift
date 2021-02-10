@@ -68,28 +68,17 @@ class MainViewController: UIViewController {
     }
     
     private func setupUIButton() {
-        oneJokeButton.layer.cornerRadius = 15
-        manyJokesButton.layer.cornerRadius = 15
+        oneJokeButton.layer.cornerRadius = 10
+        manyJokesButton.layer.cornerRadius = 10
         
     }
     
     private func fetchOneJoke() {
-        
-        //??
         NetworkManager.shared.fetchOneJoke { oneJoke in
             DispatchQueue.main.async {
                 self.oneJoke = oneJoke
             }
         }
-    }
-    
-    
-    @IBAction func oneJokeButtonPressed(_ sender: UIButton) {
-        
-    }
-    
-    @IBAction func manyJokesButtonPressed(_ sender: UIButton) {
-        
     }
 }
 
